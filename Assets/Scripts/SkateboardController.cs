@@ -2,35 +2,30 @@ using UnityEngine;
 
 public class SkateboardController : MonoBehaviour
 {
-    public GameObject board;
+    public GameObject board;    
     private Rigidbody2D m_boardRb;
 
     public GameObject frontWheel;
-    private WheelGroundChecker m_frontWheelScript;
+    private WheelController m_frontWheelScript;
 
     public GameObject backWheel;
-    private WheelGroundChecker m_backWheelScript;
+    private WheelController m_backWheelScript;
 
     private void Start()
     {
         m_boardRb = board.GetComponent<Rigidbody2D>();
-        m_frontWheelScript = frontWheel.GetComponent<WheelGroundChecker>();
-        m_backWheelScript = backWheel.GetComponent<WheelGroundChecker>();
-    }
-
-    public bool IsFlatOnGround()
-    {
-        return m_frontWheelScript.IsOnGround() && m_backWheelScript.IsOnGround();
+        m_frontWheelScript = frontWheel.GetComponent<WheelController>();
+        m_backWheelScript = backWheel.GetComponent<WheelController>();
     }
 
     public bool IsFrontWheelOnGround()
     {
-        return m_frontWheelScript.IsOnGround();
+        return m_frontWheelScript.IsTouchingGround();
     }
 
     public bool IsBackWheelOnGround()
     {
-        return m_backWheelScript.IsOnGround();
+        return m_backWheelScript.IsTouchingGround();
     }
 
     // Note: Force applied not on world x space but local x space

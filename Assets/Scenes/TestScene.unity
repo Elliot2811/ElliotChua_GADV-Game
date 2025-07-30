@@ -755,6 +755,7 @@ GameObject:
   - component: {fileID: 973233660}
   - component: {fileID: 973233662}
   - component: {fileID: 973233661}
+  - component: {fileID: 973233664}
   - component: {fileID: 973233663}
   m_Layer: 0
   m_Name: Back Wheels
@@ -904,6 +905,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ded599ec11f86f43841a5a104b02cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &973233664
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973233658}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00000047683716}
+  serializedVersion: 2
+  m_Radius: 0.75
 --- !u!1 &1500086545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1160,7 @@ GameObject:
   - component: {fileID: 1659048714}
   - component: {fileID: 1659048716}
   - component: {fileID: 1659048715}
+  - component: {fileID: 1659048718}
   - component: {fileID: 1659048717}
   m_Layer: 0
   m_Name: Front Wheels
@@ -1273,6 +1310,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ded599ec11f86f43841a5a104b02cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1659048718
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659048712}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00000047683716}
+  serializedVersion: 2
+  m_Radius: 0.75
 --- !u!1 &1857269105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,9 +1552,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1857269105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9252ad11190e0d4c9590094172da97c, type: 3}
+  m_Script: {fileID: 11500000, guid: 23096c70ba71b5d4d8c137df28464d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skateboard: {fileID: 1648831663}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

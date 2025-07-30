@@ -1,29 +1,33 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class WheelGroundChecker : MonoBehaviour
+public class WheelController : MonoBehaviour
 {
     // Stores all currently tocuhed objects that have the "Ground" tag
     private List<GameObject> touchingGroundObj = new List<GameObject>();
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            // Add the object to the list of touching ground objects
             touchingGroundObj.Add(collision.gameObject);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            // Remove the object from the list of touching ground objects
             touchingGroundObj.Remove(collision.gameObject);
         }
     }
 
-    public bool IsOnGround()
+    public bool IsTouchingGround()
     {
+        // Return true if there are any objects in the touchingGroundObj list
         return touchingGroundObj.Count > 0;
     }
 }
