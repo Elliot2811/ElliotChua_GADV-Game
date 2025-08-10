@@ -8,12 +8,15 @@ public class PlayerInputManager : MonoBehaviour
 
     public GameObject skateboard; // Reference to skateboard player is currently on
     private SkateboardController m_skateboardController;
-    private bool m_onBoard = false;
+
 
     // Input values for skateboard movement
     public float AccelerationForce = 5000.0f; // Force applied to skateboard when accelerating
     public float DecelerationForce = 10000.0f; // Force applied to skateboard when decelerating
-    public float JumpVelocity = 30.0f; // How high player can jump when on skateboard
+    public float TorqueInDirection = 1000.0f; // Torque applied to skateboard when turning
+    public float maxRotationSpeed = 180.0f; // Maximum rotation speed in degrees per second
+
+    public float JumpForce = 30.0f; // How high player can jump when on skateboard
     // End of Input values for skateboard movement
 
     // Temp values for input
@@ -39,11 +42,7 @@ public class PlayerInputManager : MonoBehaviour
         if (skateboard != null)
         {
             m_skateboardController = skateboard.GetComponent<SkateboardController>();
-            if (m_skateboardController != null)
-            {
-                m_onBoard = true; // Player is on a skateboard
-            }
-            else
+            if (m_skateboardController == null)
             {
                 Debug.LogError("SkateboardController component not found on skateboard GameObject.");
             }
@@ -56,51 +55,45 @@ public class PlayerInputManager : MonoBehaviour
 
     private void Update()
     {
+        if (m_skateboardController == null || m_playerController == null)
+        {
+            return; // Early return
+        }
+
         m_horizontalInput = Input.GetAxis("Horizontal");
 
-        if (m_onBoard)
-        {
-            OnBoard();
-        }
-        else // Player is off the board
-        {
-            OffBoard();
-        }
-    }
-
-    private void OnBoard()
-    {
         if (m_skateboardController.IsFrontWheelOnGround() && m_skateboardController.IsBackWheelOnGround()) // Player is on flat ground
         {
             // Debug.Log("Pkayer on flat ground");
             if (m_horizontalInput != 0.0f) // Player is trying to move
             {
-               // Debug.Log("Player moving");
-               moveBoard();
+                // Debug.Log("Player moving");
+                moveBoard();
+                m_playerController.playerDirection();
             }
-            
+
             if (Input.GetButtonDown("Jump"))
             {
-                m_playerController.Jump(JumpVelocity);
+                m_playerController.Jump(JumpForce);
             }
         }
-        else if (m_skateboardController.IsFrontWheelOnGround() || m_skateboardController.IsBackWheelOnGround()) // Player is doing a manual
-        {
-
+        else if (m_skateboardController.IsFrontWheelOnGround() || m_skateboardController.IsBackWheelOnGround()) 
+        {   // Player is performing a manual
+            m_playerController.RotatePlayer(m_horizontalInput, TorqueInDirection, 15.0f);
         }
         else // Player is in the air
         {
-            m_playerController.RotatePlayer(m_horizontalInput);
+            m_playerController.RotatePlayer(m_horizontalInput, TorqueInDirection);
         }
-    }
-
-    private void OffBoard()
-    {
-        m_playerController.RotatePlayer(m_horizontalInput);
     }
 
     private void moveBoard()
     {
+        if (m_playerController == null || m_skateboardController == null)
+        {
+            return; // Early return
+        }
+
         if (m_playerRb.velocity.x == 0.0f ||
             (Mathf.Sign(m_playerRb.velocity.x) < 0.0f && m_horizontalInput < 0.0f) ||
             (Mathf.Sign(m_playerRb.velocity.x) > 0.0f && m_horizontalInput > 0.0f))
