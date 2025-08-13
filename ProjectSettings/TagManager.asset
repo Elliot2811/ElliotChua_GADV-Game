@@ -9,6 +9,7 @@ TagManager:
   - Skateboard
   - Enemy
   - Spike
+  - Cassette tape
   layers:
   - Default
   - TransparentFX

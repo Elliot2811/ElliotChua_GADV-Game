@@ -12,6 +12,11 @@ public class GameStateHandler : MonoBehaviour
         Instance = this;        
     }
 
+    public void WinStage()
+    {
+        SceneManager.LoadScene("WinScene", LoadSceneMode.Single);
+    }
+
     public void Lose()
     {
         // Load the "LoseScene" when the player loses (player falls or run out of time)
