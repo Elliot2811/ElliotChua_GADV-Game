@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ca30022c5a4c674d95d2991e6a95517
+guid: 37ee509309dd3b244bad8facf4ec18dd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,85 +97,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: diabetes_0
+      name: 16-bit-spike-Sheet_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 80
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4562d44a1a41efc49b30aa759d4aff3c
-      internalID: 2123852641
+      spriteID: 70f687d5f96b56740982b99e89113aee
+      internalID: -83242996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diabetes_1
+      name: 16-bit-spike-Sheet_1
       rect:
         serializedVersion: 2
-        x: 112
-        y: 80
+        x: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d6ec75a000d80e49a230abe55772449
-      internalID: 1813251180
+      spriteID: 0eb102ff253db8442acbfaa6d6331a40
+      internalID: -606210203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diabetes_2
+      name: 16-bit-spike-Sheet_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 80
+        x: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73fbfd5d04316d1458b3bd77009d01b1
-      internalID: -260047870
+      spriteID: d7c6f4390e4af604483613ba7f1f3e1b
+      internalID: 1635300122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diabetes_3
+      name: 16-bit-spike-Sheet_3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 80
+        x: 48
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3482d052e39b2314e8f8ded7b9b538a7
-      internalID: -950803052
+      spriteID: 17932f34f2dfb6b42b771b4250becb88
+      internalID: -1525184387
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      diabetes_0: 2123852641
-      diabetes_1: 1813251180
-      diabetes_2: -260047870
-      diabetes_3: -950803052
+      16-bit-spike-Sheet_0: -83242996
+      16-bit-spike-Sheet_1: -606210203
+      16-bit-spike-Sheet_2: 1635300122
+      16-bit-spike-Sheet_3: -1525184387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

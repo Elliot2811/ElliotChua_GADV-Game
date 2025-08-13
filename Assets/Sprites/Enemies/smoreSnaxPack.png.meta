@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ca30022c5a4c674d95d2991e6a95517
+guid: 625a295947559ad4cbfd1e6ffcc6c2fd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,11 +97,116 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: diabetes_0
+      name: smoreSnaxPack_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dab3b5ce2220144e9d99490ab611686
+      internalID: -536654494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoreSnaxPack_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d646a702dfc085b4da5207983d52cd2f
+      internalID: -1269382042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoreSnaxPack_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a4f4cd2fc478947956512de1e9b475
+      internalID: -636832571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoreSnaxPack_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d170dddbe67e243912329a5e142da9
+      internalID: 1794317765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoreSnaxPack_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d278d088b0c32234f9ddcde389917b27
+      internalID: -1865681511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoreSnaxPack_5
       rect:
         serializedVersion: 2
         x: 96
-        y: 80
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -111,18 +216,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4562d44a1a41efc49b30aa759d4aff3c
-      internalID: 2123852641
+      spriteID: 59ea17a6ff026fc40b6517e627c6f20e
+      internalID: -1151344356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diabetes_1
+      name: smoreSnaxPack_6
       rect:
         serializedVersion: 2
         x: 112
-        y: 80
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -132,18 +237,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d6ec75a000d80e49a230abe55772449
-      internalID: 1813251180
+      spriteID: 8b8d5067c2a7eb14da3f3ad4813f16cf
+      internalID: -1114365651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diabetes_2
+      name: smoreSnaxPack_7
       rect:
         serializedVersion: 2
         x: 128
-        y: 80
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -153,29 +258,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73fbfd5d04316d1458b3bd77009d01b1
-      internalID: -260047870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diabetes_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3482d052e39b2314e8f8ded7b9b538a7
-      internalID: -950803052
+      spriteID: e4cac060d2cefc040936f1626120eff9
+      internalID: -1184424619
       vertices: []
       indices: 
       edges: []
@@ -191,10 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      diabetes_0: 2123852641
-      diabetes_1: 1813251180
-      diabetes_2: -260047870
-      diabetes_3: -950803052
+      smoreSnaxPack_0: -536654494
+      smoreSnaxPack_1: -1269382042
+      smoreSnaxPack_2: -636832571
+      smoreSnaxPack_3: 1794317765
+      smoreSnaxPack_4: -1865681511
+      smoreSnaxPack_5: -1151344356
+      smoreSnaxPack_6: -1114365651
+      smoreSnaxPack_7: -1184424619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

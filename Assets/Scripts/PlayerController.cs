@@ -1,7 +1,9 @@
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{
+{    // This script handles forces appled on player such as jumping and rotation.
+     // It also handles the player sprite flipping based on movement direction.
+
     private Rigidbody2D m_playerRb;
 
     public GameObject Skateboard;
@@ -18,34 +20,36 @@ public class PlayerController : MonoBehaviour
         }
 
         m_spriteRenderer = GetComponent<SpriteRenderer>();
-        if (m_playerRb == null)
+        if (m_spriteRenderer == null)
         {
             Debug.LogError("SpriteRenderer component not found on this GameObject.");
         }
     }
 
-    // When player goes right, they expect clockwise rotation, hence the negative sign
-    public void RotatePlayer(float m_horizontalInput, float TorqueInDirection, float maxRotationSpeed = 180.0f)
+    
+    public void RotatePlayer(float m_horizontalInput, float TorqueInDirection, float maxRotationSpeed = 270.0f)
     {
         if (m_playerRb != null)
         {
+            // When player goes right, they expect clockwise rotation. Neg sign for rotation direction to be expected
             m_playerRb.AddTorque(-m_horizontalInput * TorqueInDirection * Time.deltaTime, ForceMode2D.Force);
-            float rotation = m_playerRb.angularVelocity;
+            float angularVelocity = m_playerRb.angularVelocity;
 
-            if (rotation > maxRotationSpeed)
+            if (angularVelocity > maxRotationSpeed)
             {
-                rotation = maxRotationSpeed;
+                angularVelocity = maxRotationSpeed; // Cap max rotation speed (counter-clockwise)
             }
-            else if (rotation < -maxRotationSpeed)
+            else if (angularVelocity < -maxRotationSpeed)
             {
-                rotation = -maxRotationSpeed;
+                angularVelocity = -maxRotationSpeed; // Cap max rotation speed (clockwise)
             }
             else
-            {
-                return; // No need to set the torque if it's within bounds
+            {   
+                // No change in angular velocity
+                return; 
             }
 
-            m_playerRb.angularVelocity = rotation;
+            m_playerRb.angularVelocity = angularVelocity;
         }
         
     }
@@ -54,6 +58,7 @@ public class PlayerController : MonoBehaviour
     {
         if (m_playerRb != null)
         {
+            // Finds the vector of the local up of the player
             Vector2 localUp = transform.TransformDirection(Vector2.up);
             localUp.Normalize();
 
@@ -61,8 +66,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void playerDirection()
-    {
+    public void spriteDirection()
+    {   // Flips the player sprite based on the direction of movement
         if (m_playerRb != null && m_spriteRenderer != null)
         {   
             float temp = m_playerRb.velocity.x;
@@ -75,6 +80,15 @@ public class PlayerController : MonoBehaviour
             {
                 m_spriteRenderer.flipX = true;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Spike"))
+        {
+            Debug.Log("Player hit a spike (player)");
+            GameStateHandler.Instance.Lose();
         }
     }
 }

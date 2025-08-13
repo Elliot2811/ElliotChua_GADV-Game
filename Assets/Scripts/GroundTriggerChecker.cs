@@ -2,8 +2,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class WheelController : MonoBehaviour
-{
+public class GroundTriggerChecker : MonoBehaviour
+{   // This script checks if the object is touching any ground objects
+
     // Stores all currently tocuhed objects that have the "Ground" tag
     private List<GameObject> touchingGroundObj = new List<GameObject>();
 
