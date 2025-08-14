@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,10 +100,10 @@ TextureImporter:
       name: platformerTileset01_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 80
+        y: 112
         width: 48
-        height: 16
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,18 +121,18 @@ TextureImporter:
       name: platformerTileset01_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 80
+        y: 96
         width: 48
-        height: 48
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a66e5cbae1242e4688fcda0a885f7eb
+      spriteID: db629010dbf99db4d8735aa2a8bedc86
       internalID: -783322242
       vertices: []
       indices: 
@@ -151,6 +151,80 @@ TextureImporter:
     nameFileIdTable:
       platformerTileset01_0: 1449941819
       platformerTileset01_1: -783322242
+      platformerTileset01_10: 2039410610
+      platformerTileset01_11: -787147987
+      platformerTileset01_12: 2143109399
+      platformerTileset01_13: 606098441
+      platformerTileset01_14: -989498153
+      platformerTileset01_15: 1678141516
+      platformerTileset01_16: 2069146629
+      platformerTileset01_17: -208194180
+      platformerTileset01_18: -1431060766
+      platformerTileset01_19: 2138786177
+      platformerTileset01_2: 1442392831
+      platformerTileset01_20: 783740876
+      platformerTileset01_21: -667775402
+      platformerTileset01_22: 1357830348
+      platformerTileset01_23: -609815258
+      platformerTileset01_24: 772780542
+      platformerTileset01_25: -558735997
+      platformerTileset01_26: -652647819
+      platformerTileset01_27: 340335404
+      platformerTileset01_28: 1239614654
+      platformerTileset01_29: 2058612060
+      platformerTileset01_3: -1993017255
+      platformerTileset01_30: -937026833
+      platformerTileset01_31: -1560758488
+      platformerTileset01_32: -889254104
+      platformerTileset01_33: 1509020924
+      platformerTileset01_34: 1483307980
+      platformerTileset01_35: -1494048676
+      platformerTileset01_36: 549068032
+      platformerTileset01_37: 1115176254
+      platformerTileset01_38: -1631228339
+      platformerTileset01_39: -1695829773
+      platformerTileset01_4: -1279965819
+      platformerTileset01_40: 346286409
+      platformerTileset01_41: -1797976435
+      platformerTileset01_42: 1305525537
+      platformerTileset01_43: 199438279
+      platformerTileset01_44: 1623839990
+      platformerTileset01_45: 745153393
+      platformerTileset01_46: -846950078
+      platformerTileset01_47: -954123838
+      platformerTileset01_48: -1168150633
+      platformerTileset01_49: 471689167
+      platformerTileset01_5: 1732596626
+      platformerTileset01_50: 1387130906
+      platformerTileset01_51: 666291288
+      platformerTileset01_52: -1936178810
+      platformerTileset01_53: 1358612740
+      platformerTileset01_54: 1222429258
+      platformerTileset01_55: 1082528738
+      platformerTileset01_56: -908040557
+      platformerTileset01_57: 1617065329
+      platformerTileset01_58: -547230786
+      platformerTileset01_59: 366252708
+      platformerTileset01_6: -493280691
+      platformerTileset01_60: -573732871
+      platformerTileset01_61: 2065230429
+      platformerTileset01_62: -2044228779
+      platformerTileset01_63: -116094820
+      platformerTileset01_64: -866812554
+      platformerTileset01_65: 1367783161
+      platformerTileset01_66: 1478050133
+      platformerTileset01_67: -917643760
+      platformerTileset01_68: -1164697624
+      platformerTileset01_69: -1902534865
+      platformerTileset01_7: -2032102322
+      platformerTileset01_70: -506987676
+      platformerTileset01_71: -1973909259
+      platformerTileset01_72: -808159892
+      platformerTileset01_73: -1932668591
+      platformerTileset01_74: 894254069
+      platformerTileset01_75: 246855734
+      platformerTileset01_8: -1474464703
+      platformerTileset01_9: -982616850
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

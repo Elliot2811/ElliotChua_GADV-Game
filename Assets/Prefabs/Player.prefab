@@ -124,8 +124,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0.2
+  m_Mass: 2
+  m_LinearDrag: 0.3
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -175,14 +175,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 1.6}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.6, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.2}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!255 &1244236799985492341
 FixedJoint2D:
@@ -199,8 +199,8 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: -0.8}
-  m_ConnectedAnchor: {x: 0, y: 0.15}
+  m_Anchor: {x: 0, y: -0.5}
+  m_ConnectedAnchor: {x: 0, y: 0.09375}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!114 &43104030839218139
@@ -233,7 +233,7 @@ MonoBehaviour:
   DecelerationForce: 4000
   TorqueInDirection: 1500
   maxRotationSpeed: 180
-  JumpForce: 40
+  JumpForce: 25
 --- !u!1 &6996040866770736244
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ Transform:
   m_GameObject: {fileID: 6996040866770736244}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.95, y: -0.2, z: 0}
+  m_LocalPosition: {x: 0.59375, y: -0.125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -282,8 +282,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.2
-  m_AngularDrag: 0.5
+  m_LinearDrag: 0.3
+  m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 4f653f1c872c0e146974ea3eea67932e, type: 2}
   m_IncludeLayers:
@@ -330,7 +330,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.1325825
 --- !u!58 &367615741417152698
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -365,7 +365,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.265165
 --- !u!114 &7697994744626510676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,7 +407,7 @@ Transform:
   m_GameObject: {fileID: 7584803722990164078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.95, y: -0.2, z: 0}
+  m_LocalPosition: {x: -0.59375, y: -0.125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -426,8 +426,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.2
-  m_AngularDrag: 0.5
+  m_LinearDrag: 0.3
+  m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 4f653f1c872c0e146974ea3eea67932e, type: 2}
   m_IncludeLayers:
@@ -474,7 +474,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.13258252
 --- !u!58 &1968575165432472425
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -509,7 +509,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.26516503
 --- !u!114 &1785557055543872377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +553,7 @@ Transform:
   m_GameObject: {fileID: 8057917629402497666}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.95, z: 0}
+  m_LocalPosition: {x: 0, y: -0.59375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -625,9 +625,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0.2
-  m_AngularDrag: 0.5
+  m_Mass: 1.4
+  m_LinearDrag: 0.3
+  m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: b8fda7ce1b710b14ea68016b7cd4b29e, type: 2}
   m_IncludeLayers:
@@ -672,18 +672,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.3}
+  m_Offset: {x: 0, y: 0.09375}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 0.7}
+    oldSize: {x: 1.875, y: 0.4375}
     newSize: {x: 3, y: 0.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 0.1}
+  m_Size: {x: 1.625, y: 0.25}
   m_EdgeRadius: 0
 --- !u!255 &890488600514742894
 FixedJoint2D:
@@ -700,8 +700,8 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.95, y: -0.05}
-  m_ConnectedAnchor: {x: 0, y: 0.15}
+  m_Anchor: {x: 0.59375, y: 0.0625}
+  m_ConnectedAnchor: {x: 0, y: 0.1875}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &5507140370206726830
@@ -719,8 +719,8 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: -0.95, y: -0.05}
-  m_ConnectedAnchor: {x: 0, y: 0.15}
+  m_Anchor: {x: -0.59375, y: 0.0625}
+  m_ConnectedAnchor: {x: 0, y: 0.1875}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!114 &3137376853316408449
