@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37ee509309dd3b244bad8facf4ec18dd
+guid: be4adfe86ad32ee41adb26512c5222df
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 64
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 16-bit-spike-Sheet_0
+      name: Small Sturdy Padlock - BLACK - Spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70f687d5f96b56740982b99e89113aee
-      internalID: -83242996
+      spriteID: a8b1d7200fc147e4b9b35311c4861b08
+      internalID: 245983057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16-bit-spike-Sheet_1
+      name: Small Sturdy Padlock - BLACK - Spritesheet_1
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eb102ff253db8442acbfaa6d6331a40
-      internalID: -606210203
+      spriteID: 87b032859cca57f4ca961be895cb487b
+      internalID: -792620508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16-bit-spike-Sheet_2
+      name: Small Sturdy Padlock - BLACK - Spritesheet_2
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c6f4390e4af604483613ba7f1f3e1b
-      internalID: 1635300122
+      spriteID: 1e9cc6916fe863941868800a7493dcb8
+      internalID: -1423525247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16-bit-spike-Sheet_3
+      name: Small Sturdy Padlock - BLACK - Spritesheet_3
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17932f34f2dfb6b42b771b4250becb88
-      internalID: -1525184387
+      spriteID: 2396a1eb60303104c820f8054f79519b
+      internalID: 1376093348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Sturdy Padlock - BLACK - Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a46e10d736b99b49bc3b33a852172d0
+      internalID: -1737134210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Sturdy Padlock - BLACK - Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40655aa5dca15746bf4fdcc1edb3455
+      internalID: 183500038
       vertices: []
       indices: 
       edges: []
@@ -191,10 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      16-bit-spike-Sheet_0: -83242996
-      16-bit-spike-Sheet_1: -606210203
-      16-bit-spike-Sheet_2: 1635300122
-      16-bit-spike-Sheet_3: -1525184387
+      Small Sturdy Padlock - BLACK - Spritesheet_0: 245983057
+      Small Sturdy Padlock - BLACK - Spritesheet_1: -792620508
+      Small Sturdy Padlock - BLACK - Spritesheet_2: -1423525247
+      Small Sturdy Padlock - BLACK - Spritesheet_3: 1376093348
+      Small Sturdy Padlock - BLACK - Spritesheet_4: -1737134210
+      Small Sturdy Padlock - BLACK - Spritesheet_5: 183500038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -124,10 +124,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0.2
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.25
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -231,9 +231,9 @@ MonoBehaviour:
   skateboard: {fileID: 8057917629402497666}
   AccelerationForce: 2500
   DecelerationForce: 4000
-  TorqueInDirection: 1500
-  maxRotationSpeed: 180
-  JumpForce: 40
+  TorqueInDirection: 1750
+  maxRotationSpeed: 270
+  JumpVelocity: 25
 --- !u!1 &6996040866770736244
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,10 +281,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.75
   m_LinearDrag: 0.2
-  m_AngularDrag: 0.5
-  m_GravityScale: 1
+  m_AngularDrag: 0.05
+  m_GravityScale: 1.25
   m_Material: {fileID: 6200000, guid: 4f653f1c872c0e146974ea3eea67932e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -425,10 +425,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.75
   m_LinearDrag: 0.2
-  m_AngularDrag: 0.5
-  m_GravityScale: 1
+  m_AngularDrag: 0.05
+  m_GravityScale: 1.25
   m_Material: {fileID: 6200000, guid: 4f653f1c872c0e146974ea3eea67932e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 6897558361175648625}
   - component: {fileID: 5404113059897938830}
   - component: {fileID: 8072654206134692804}
-  - component: {fileID: 9175724448181062850}
+  - component: {fileID: 3800454417094580752}
   - component: {fileID: 890488600514742894}
   - component: {fileID: 5507140370206726830}
   - component: {fileID: 3137376853316408449}
@@ -627,8 +627,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0.2
-  m_AngularDrag: 0.5
-  m_GravityScale: 1
+  m_AngularDrag: 0.05
+  m_GravityScale: 1.25
   m_Material: {fileID: 6200000, guid: b8fda7ce1b710b14ea68016b7cd4b29e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -640,7 +640,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &9175724448181062850
+--- !u!61 &3800454417094580752
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -672,7 +672,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.3}
+  m_Offset: {x: 0, y: 0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -683,7 +683,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 0.1}
+  m_Size: {x: 3, y: 0.3}
   m_EdgeRadius: 0
 --- !u!255 &890488600514742894
 FixedJoint2D:
@@ -737,4 +737,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frontWheel: {fileID: 6996040866770736244}
   backWheel: {fileID: 7584803722990164078}
-  maxSpd: 20
+  maxSpd: 15

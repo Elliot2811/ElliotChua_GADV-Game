@@ -54,19 +54,19 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    public void Jump(float JumpForce)
+    public void Jump(float JumpVelocity)
     {
         if (m_playerRb != null)
         {
-            // Finds the vector of the local up of the player
-            Vector2 localUp = transform.TransformDirection(Vector2.up);
-            localUp.Normalize();
+            // Finds the vector between the local up of the player in world space
+            Vector2 direction = transform.TransformDirection(Vector2.up);
+            direction.Normalize();
 
-            m_playerRb.velocity = new Vector2(m_playerRb.velocity.x + localUp.x * JumpForce, localUp.y * JumpForce);
+            m_playerRb.velocity = new Vector2(m_playerRb.velocity.x + direction.x * JumpVelocity, direction.y * JumpVelocity);
         }
     }
 
-    public void spriteDirection()
+    public float PlayerSpriteDirection()
     {   // Flips the player sprite based on the direction of movement
         if (m_playerRb != null && m_spriteRenderer != null)
         {   
@@ -80,7 +80,10 @@ public class PlayerController : MonoBehaviour
             {
                 m_spriteRenderer.flipX = true;
             }
+
+            return temp;
         }
+        return 0.0f; // Return 0 if Rigidbody2D or SpriteRenderer is not found
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

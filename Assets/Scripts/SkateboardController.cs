@@ -14,16 +14,47 @@ public class SkateboardController : MonoBehaviour
 
     public float maxSpd = 10.0f; // Maximum speed of the skateboard
 
+    private SpriteRenderer m_spriteRenderer;
+
     private void Start()
     {
         m_boardRb = GetComponent<Rigidbody2D>();
+        if (m_boardRb == null)
+        {
+            Debug.LogError("Rigidbody2D component not found on this GameObject.");
+            return;
+        }
+
         m_frontWheelScript = frontWheel.GetComponent<GroundTriggerChecker>();
+        if (m_frontWheelScript == null)
+        {
+            Debug.LogError("GroundTriggerChecker component not found on front wheel GameObject.");
+            return;
+        }
+
         m_backWheelScript = backWheel.GetComponent<GroundTriggerChecker>();
+        if (m_backWheelScript == null)
+        {
+            Debug.LogError("GroundTriggerChecker component not found on back wheel GameObject.");
+            return;
+            
+        }
+
+        m_spriteRenderer = GetComponent<SpriteRenderer>();
+        if (m_spriteRenderer == null)
+        {
+            Debug.LogError("SpriteRenderer component not found on this GameObject.");
+        }
     }
 
 
     public void move(float xforce, float ForceInDirection)
     {
+        if (m_boardRb == null)
+        {
+            return;
+        }
+
         //Adds forces to the skateboard in the x direction
         // Note: Forces are applied not on world x space but local x space
         m_boardRb.AddForce(new Vector2(xforce * ForceInDirection * Time.deltaTime, 0.0f));
@@ -45,6 +76,18 @@ public class SkateboardController : MonoBehaviour
         }
 
         m_boardRb.velocity = new Vector2(velocityX, m_boardRb.velocity.y);
+    }
+    
+    public void SkateboardSpriteDirection(float playerXVelocity)
+    {
+        if (playerXVelocity > 0)
+        {
+            m_spriteRenderer.flipX = false;
+        }
+        else if (playerXVelocity < 0)
+        {
+            m_spriteRenderer.flipX = true;
+        }
     }
 
     public bool IsFrontWheelOnGround()

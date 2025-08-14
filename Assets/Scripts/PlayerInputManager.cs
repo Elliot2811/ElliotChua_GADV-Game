@@ -19,7 +19,7 @@ public class PlayerInputManager : MonoBehaviour
     public float TorqueInDirection = 1500.0f; // Torque applied to skateboard when turning
     public float maxRotationSpeed = 180.0f; // Maximum rotation speed in degrees per second
 
-    public float JumpForce = 40.0f; // How high player can jump when on skateboard
+    public float JumpVelocity = 10.0f; // Velocity of player when jumping
     // End of Input values for skateboard movement
 
     // Temp global value for input
@@ -78,17 +78,18 @@ public class PlayerInputManager : MonoBehaviour
             {
                 // Debug.Log("Player moving");
                 moveBoard();
-                m_playerController.spriteDirection(); // Updates player sprite direction based on movement
+                float temp = m_playerController.PlayerSpriteDirection(); // Updates player sprite direction based on movement
+                m_skateboardController.SkateboardSpriteDirection(temp); // Updates skateboard sprite direction based on player movement
             }
 
             if (Input.GetButtonDown("Jump")) // Checks if player uses jump button
             {
-                m_playerController.Jump(JumpForce);
+                m_playerController.Jump(JumpVelocity);
             }
         }
         else if (frontGrounded || backGrounded) 
         {   // Player is performing a manual
-            moveBoard(0.25f);
+            moveBoard(0.5f);
             m_playerController.RotatePlayer(m_horizontalInput, TorqueInDirection * 1.5f, 15.0f);
         }
         else 

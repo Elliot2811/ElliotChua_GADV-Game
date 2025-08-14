@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 625a295947559ad4cbfd1e6ffcc6c2fd
+guid: 575b92e08c5d48f49ba8d7825b34ccda
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,169 +97,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smoreSnaxPack_0
+      name: Key 6 - GREY - Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22cf16432bd45443b74ce3972266d3c
+      internalID: 1271614465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key 6 - GREY - Spritesheet_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 48
+        y: 0
         width: 16
-        height: 16
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dab3b5ce2220144e9d99490ab611686
-      internalID: -536654494
+      spriteID: 82232b08cf6f61b4cba73a45b070cae5
+      internalID: 156264435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoreSnaxPack_1
+      name: Key 6 - GREY - Spritesheet_2
       rect:
         serializedVersion: 2
         x: 32
-        y: 48
+        y: 0
         width: 16
-        height: 16
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d646a702dfc085b4da5207983d52cd2f
-      internalID: -1269382042
+      spriteID: 7b801f9e4c5fbd94a9569ef773caa72d
+      internalID: -260920142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoreSnaxPack_2
+      name: Key 6 - GREY - Spritesheet_3
       rect:
         serializedVersion: 2
         x: 48
-        y: 48
+        y: 0
         width: 16
-        height: 16
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2a4f4cd2fc478947956512de1e9b475
-      internalID: -636832571
+      spriteID: a78f641fd17c7b54dba2e7b697b741ae
+      internalID: -680250689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoreSnaxPack_3
+      name: Key 6 - GREY - Spritesheet_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 48
+        y: 0
         width: 16
-        height: 16
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8d170dddbe67e243912329a5e142da9
-      internalID: 1794317765
+      spriteID: d056377ccd0e2cc45ac13f16a9b0a836
+      internalID: 1681103326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoreSnaxPack_4
+      name: Key 6 - GREY - Spritesheet_5
       rect:
         serializedVersion: 2
         x: 80
-        y: 48
+        y: 0
         width: 16
-        height: 16
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d278d088b0c32234f9ddcde389917b27
-      internalID: -1865681511
+      spriteID: 5727365e462e4824aabf4026c951c45e
+      internalID: -1961148189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoreSnaxPack_5
+      name: Key 6 - GREY - Spritesheet_6
       rect:
         serializedVersion: 2
         x: 96
-        y: 48
+        y: 0
         width: 16
-        height: 16
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59ea17a6ff026fc40b6517e627c6f20e
-      internalID: -1151344356
+      spriteID: bd91a91419dfbb948875286a08216e21
+      internalID: 541515686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoreSnaxPack_6
+      name: Key 6 - GREY - Spritesheet_7
       rect:
         serializedVersion: 2
         x: 112
-        y: 48
+        y: 0
         width: 16
-        height: 16
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b8d5067c2a7eb14da3f3ad4813f16cf
-      internalID: -1114365651
+      spriteID: 9cd41027c6a5bf8478f6ada61acfe19b
+      internalID: 1564012731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoreSnaxPack_7
+      name: Key 6 - GREY - Spritesheet_8
       rect:
         serializedVersion: 2
         x: 128
-        y: 48
+        y: 0
         width: 16
-        height: 16
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4cac060d2cefc040936f1626120eff9
-      internalID: -1184424619
+      spriteID: 3bb9b02573fdc8d41a0cce3409b36fb6
+      internalID: 358561949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key 6 - GREY - Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb6937eff191fe4da0ce6c12fd32f35
+      internalID: -1780626008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key 6 - GREY - Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba83b8526e6af24f86a64a5640f2bee
+      internalID: 100988588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key 6 - GREY - Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5935795b5d6674d919386e3aab6240
+      internalID: -2025500344
       vertices: []
       indices: 
       edges: []
@@ -275,14 +359,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      smoreSnaxPack_0: -536654494
-      smoreSnaxPack_1: -1269382042
-      smoreSnaxPack_2: -636832571
-      smoreSnaxPack_3: 1794317765
-      smoreSnaxPack_4: -1865681511
-      smoreSnaxPack_5: -1151344356
-      smoreSnaxPack_6: -1114365651
-      smoreSnaxPack_7: -1184424619
+      Key 6 - GREY - Spritesheet_0: 1271614465
+      Key 6 - GREY - Spritesheet_1: 156264435
+      Key 6 - GREY - Spritesheet_10: 100988588
+      Key 6 - GREY - Spritesheet_11: -2025500344
+      Key 6 - GREY - Spritesheet_2: -260920142
+      Key 6 - GREY - Spritesheet_3: -680250689
+      Key 6 - GREY - Spritesheet_4: 1681103326
+      Key 6 - GREY - Spritesheet_5: -1961148189
+      Key 6 - GREY - Spritesheet_6: 541515686
+      Key 6 - GREY - Spritesheet_7: 1564012731
+      Key 6 - GREY - Spritesheet_8: 358561949
+      Key 6 - GREY - Spritesheet_9: -1780626008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
