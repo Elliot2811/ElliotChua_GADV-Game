@@ -39,8 +39,7 @@ public class Key : MonoBehaviour
             )
         {
             lockScript.unlock();
+            Destroy(gameObject);
         }
-
-        Destroy(gameObject);
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8345851684182738014}
   - component: {fileID: 517738000371631335}
   m_Layer: 0
-  m_Name: GroundInFront
+  m_Name: Groundbelow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 2539319949333113129}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,10 +285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4885245884ca41245ba908d825dd5a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WallCheckerObject: {fileID: 8342449340856978969}
-  GroundCheckerObject: {fileID: 6455725217394411902}
+  FrontCheckerObject: {fileID: 8342449340856978969}
+  BelowCheckerObject: {fileID: 6455725217394411902}
   Moving: 1
-  EnemySpeed: 4
+  EnemySpeed: 2
 --- !u!1 &8342449340856978969
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7412112406089447525}
   - component: {fileID: 1807847282632478395}
-  - component: {fileID: 7650466070645589967}
+  - component: {fileID: 6900183197240104098}
   m_Layer: 0
   m_Name: WallInFront
   m_TagString: Untagged
@@ -365,9 +365,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.25, y: 0.25}
   m_EdgeRadius: 0
---- !u!114 &7650466070645589967
+--- !u!114 &6900183197240104098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -376,6 +376,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8342449340856978969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d96f6d8ca7b19f409f580667cee3196, type: 3}
+  m_Script: {fileID: 11500000, guid: f7296199efc22c640be45e5c068dd51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

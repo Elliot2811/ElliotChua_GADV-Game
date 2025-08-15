@@ -24,11 +24,11 @@ public class MovingPlatform : MonoBehaviour
     {
         while (true)
         {
-            yield return MoveToPosition(EndPosition); // Move from Start to End position
-            yield return new WaitForSeconds(WaitTime); // Wait at the end position
-
-            yield return MoveToPosition(StartPosition); // Move back to Start position
             yield return new WaitForSeconds(WaitTime); // Wait at the start position
+            yield return MoveToPosition(EndPosition); // Move from Start to End position
+
+            yield return new WaitForSeconds(WaitTime); // Wait at the end position
+            yield return MoveToPosition(StartPosition); // Move back to Start position
         }
 
     }

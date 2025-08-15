@@ -9,12 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Used Scenes/MainMenu.unity
     guid: c00e68037d0ff6c49a8f798dd84932df
   - enabled: 1
-    path: Assets/Scenes/Used Scenes/LevelSelectScreen.unity
+    path: Assets/Scenes/Used Scenes/LevelSelect.unity
     guid: cf9b0240858feb544a679da699c8bac1
   - enabled: 1
-    path: Assets/Scenes/Used Scenes/Level1.unity
+    path: Assets/Scenes/Used Scenes/LoseLevel.unity
+    guid: b95655de6ae3ff448b52c18035dd4202
+  - enabled: 1
+    path: Assets/Scenes/Used Scenes/WinLevel.unity
+    guid: 4bca2f20f5316854e8cd4adb94b5649d
+  - enabled: 1
+    path: Assets/Scenes/Used Scenes/Level 1.unity
     guid: a0011f5711a62a844868101076c3e30c
   - enabled: 1
-    path: Assets/Scenes/Used Scenes/LoseScene.unity
-    guid: b95655de6ae3ff448b52c18035dd4202
+    path: Assets/Scenes/Used Scenes/Level 2.unity
+    guid: 580fe9b50758a13438c601cfc73e4915
+  - enabled: 1
+    path: Assets/Scenes/Used Scenes/Level 3.unity
+    guid: 3625bd8b8f29b074487ee6ab7e485c1b
+  - enabled: 1
+    path: Assets/Scenes/Used Scenes/WinGame.unity
+    guid: 455f9bb9ed433b2419e45bc4a9580f55
   m_configObjects: {}

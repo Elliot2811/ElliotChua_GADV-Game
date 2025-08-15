@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class RetryLevelButton : MonoBehaviour
-{
+{ // This script updates the button.onClick to retry a level
+
     private Button m_retryLevelButton;
 
     private void Awake()

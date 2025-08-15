@@ -21,11 +21,15 @@ public class GetLoseReasonTMP : MonoBehaviour
 
             if (text == "CollisionGround")
             {
-                m_loseReasonText.text = "You fell and hit your head";
+                m_loseReasonText.text = "You crashed into the ground";
             }
             else if (text == "TriggerSpike")
             {
                 m_loseReasonText.text = "Stay away from sharp spikes";
+            }
+            else if (text == "CollisionEnemy")
+            {
+                m_loseReasonText.text = "Enemy killed you";
             }
             else
             {

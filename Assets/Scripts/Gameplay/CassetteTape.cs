@@ -11,7 +11,7 @@ public class CassetteTape : MonoBehaviour
             collision.gameObject.CompareTag("Wheel")
             )
         {
-            GameStateHandler.Instance.WinStage();
+            GameStateHandler.Instance.WinLevel();
         }
     }
 }

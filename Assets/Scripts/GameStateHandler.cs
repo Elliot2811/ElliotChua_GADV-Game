@@ -1,6 +1,4 @@
 using System;
-using Unity.VisualScripting;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,9 +13,12 @@ public class GameStateHandler : MonoBehaviour
     public float m_lastLevelTime { get; private set; }
 
     [SerializeField] private string[] LevelScenes; // Array of level scene names modifiable in the inspector
-    public string m_levelName { get; private set; } = "Unknown";
+    [SerializeField] private string[] checkCompletions;
 
+    public string m_levelName { get; private set; } = "Unknown";
     public string m_loseReason { get; private set; } = "Unknown"; // Reason for losing the game, e.g., "Player fell" or "Ran out of time"
+
+    public float[] m_completionTime { get; private set; } = new float[3];
 
     public void Awake()
     {   // Singleton
@@ -30,6 +31,11 @@ public class GameStateHandler : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnEnable()
+    { // Check If playe has won on every scene load
+        SceneManager.sceneLoaded += CheckWin;
     }
 
     private void Update()
@@ -45,25 +51,9 @@ public class GameStateHandler : MonoBehaviour
         }
     }
 
-    public void LoadLevelSelectScreen()
+    public void LoadLevelSelect()
     {
-        SceneManager.LoadScene("LevelSelectScreen", LoadSceneMode.Single);
-    }
-
-    public void LoadLevel(int level)
-    {
-        switch (level)
-        {
-            case 1:
-                SceneManager.LoadScene("Level1", LoadSceneMode.Single);
-                break;
-            case 2:
-                SceneManager.LoadScene("Level2", LoadSceneMode.Single);
-                break;
-            default:
-                
-                break;
-        }
+        SceneManager.LoadScene("LevelSelect", LoadSceneMode.Single);
     }
 
     public void LoadLevel(string levelName)
@@ -71,22 +61,65 @@ public class GameStateHandler : MonoBehaviour
         SceneManager.LoadScene(levelName, LoadSceneMode.Single);
     }
 
-    public void WinStage()
+    public void WinLevel()
     {
-        SceneManager.LoadScene("WinScene", LoadSceneMode.Single);
+        m_levelName = SceneManager.GetActiveScene().name; // Store the current level name before switching scenes
+
+        if (m_levelName == "Level 1")
+        {
+            if (m_completionTime[0] == 0) m_completionTime[0] = m_currentLevelTime;
+            else m_completionTime[0] = Math.Min(m_completionTime[0], m_currentLevelTime);
+        }
+        else if (m_levelName == "Level 2")
+        {
+            if (m_completionTime[1] == 0) m_completionTime[1] = m_currentLevelTime;
+            else m_completionTime[1] = Math.Min(m_completionTime[1], m_currentLevelTime);
+        }
+        else if (m_levelName == "Level 3")
+        {
+            if (m_completionTime[2] == 0) m_completionTime[2] = m_currentLevelTime;
+            else m_completionTime[2] = Math.Min(m_completionTime[2], m_currentLevelTime);
+        }
+        
+        m_lastLevelTime = m_currentLevelTime;
+        m_currentLevelTime = 0; // Reset the current level time for the next level
+
+        //Debug.Log("WinScene loaded");
+        SceneManager.LoadScene("WinLevel", LoadSceneMode.Single);
     }
 
-    public void Lose(string reason)
+    public void LoseLevel(string reason)
     {
         m_loseReason = reason; // Set the reason for losing
-        m_levelName = SceneManager.GetActiveScene().name;
+        m_levelName = SceneManager.GetActiveScene().name; // Store the current level name before switching scenes
+        m_lastLevelTime = m_currentLevelTime; // Store the time spent in the last level
+        m_currentLevelTime = 0; // Reset the current level time for the next level
 
         // Debug.Log("LoseScene loaded");
-        SceneManager.LoadScene("LoseScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("LoseLevel", LoadSceneMode.Single);
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+    }
+
+    private void CheckWin(Scene scene, LoadSceneMode mode) // Check if player has completed every level
+    {
+        bool win = true;
+        foreach (float time in m_completionTime)
+        {
+            if (time == 0)
+            {
+                win = false;
+            }
+        }
+
+        if (win)
+        {
+            SceneManager.sceneLoaded -= CheckWin;
+
+            SceneManager.LoadScene("WinGame", LoadSceneMode.Single);
+        }
     }
 }
