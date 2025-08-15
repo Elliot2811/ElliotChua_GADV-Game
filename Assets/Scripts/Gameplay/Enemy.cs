@@ -92,7 +92,7 @@ public class Enemy : MonoBehaviour
     {   // This function handles the collision events with the player or skateboard
         if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Skateboard"))
         {
-            GameStateHandler.Instance.Lose();
+            GameStateHandler.Instance.Lose("Unknown");
         }
 
         if (collision.gameObject.CompareTag("Wheel"))

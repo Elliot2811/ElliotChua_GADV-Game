@@ -233,7 +233,7 @@ MonoBehaviour:
   DecelerationForce: 4000
   TorqueInDirection: 1500
   maxRotationSpeed: 180
-  JumpForce: 25
+  JumpForce: 20
 --- !u!1 &6996040866770736244
 GameObject:
   m_ObjectHideFlags: 0

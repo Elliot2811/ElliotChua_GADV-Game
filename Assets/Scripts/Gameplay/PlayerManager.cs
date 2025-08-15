@@ -102,15 +102,14 @@ public class PlayerManager : MonoBehaviour
     { // Check if the player (not the skateboard) collides with the ground
         if (collision.gameObject.CompareTag("Ground"))
         {
-            GameStateHandler.Instance.Lose();
+            GameStateHandler.Instance.Lose("CollisionGround");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Spike"))
         {
-            //Debug.Log("Player hit a spike (player)");
-            GameStateHandler.Instance.Lose();
+            GameStateHandler.Instance.Lose("TriggerSpike");
         }
     }
 

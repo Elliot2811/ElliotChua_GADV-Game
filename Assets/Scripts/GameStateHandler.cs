@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,8 +14,10 @@ public class GameStateHandler : MonoBehaviour
     public float m_lastLevelTime { get; private set; }
 
     [SerializeField] private string[] LevelScenes; // Array of level scene names modifiable in the inspector
-    
 
+    public int m_LevelNumber { get; private set; }
+
+    public string m_loseReason { get; private set; } = "Unknown"; // Reason for losing the game, e.g., "Player fell" or "Ran out of time"
 
     public void Awake()
     {   // Singleton
@@ -52,9 +55,11 @@ public class GameStateHandler : MonoBehaviour
         switch (level)
         {
             case 1:
+                m_LevelNumber = 1;
                 SceneManager.LoadScene("Level1", LoadSceneMode.Single);
                 break;
             case 2:
+                m_LevelNumber = 2;
                 SceneManager.LoadScene("Level2", LoadSceneMode.Single);
                 break;
             default:
@@ -68,16 +73,16 @@ public class GameStateHandler : MonoBehaviour
         SceneManager.LoadScene("WinScene", LoadSceneMode.Single);
     }
 
-    public void Lose()
+    public void Lose(string reason)
     {
-        // Load the "LoseScene" when the player loses (player falls or run out of time)
+        m_loseReason = reason; // Set the reason for losing
+
         // Debug.Log("LoseScene loaded");
         SceneManager.LoadScene("LoseScene", LoadSceneMode.Single);
     }
 
-    public void Retry()
+    public void MainMenu()
     {
-        // Debug.Log("TestScene Loaded");
-        SceneManager.LoadScene("TestScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 }

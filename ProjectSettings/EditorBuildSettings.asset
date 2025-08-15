@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Used Scenes/Level1.unity
     guid: a0011f5711a62a844868101076c3e30c
   - enabled: 1
-    path: Assets/Scenes/Used Scenes/Level2.unity
-    guid: 580fe9b50758a13438c601cfc73e4915
+    path: Assets/Scenes/Used Scenes/LoseScene.unity
+    guid: b95655de6ae3ff448b52c18035dd4202
   m_configObjects: {}

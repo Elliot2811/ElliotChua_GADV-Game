@@ -8,7 +8,7 @@ public class MovingPlatform : MonoBehaviour
     public Vector2 StartPosition = new Vector2(0, 0); // Starting position of the platform
     public Vector2 EndPosition = new Vector2(0, 5); // Ending position of the platform
 
-    public float TimePerCycle = 10.0f; // Time for a complete cycle (forward and back)
+    public float MovementTime = 5.0f; // Time for platform to move from one point to another
     public float WaitTime = 2.0f; // Time to wait at each end of the platform's movement
 
 
@@ -36,13 +36,12 @@ public class MovingPlatform : MonoBehaviour
     private IEnumerator MoveToPosition(Vector2 targetPosition)
     {
         Vector2 initial = transform.position;
-        float duration = (TimePerCycle - WaitTime * 2) / 2; // Caculate duration to move to target position
         float elapsedTime = 0f;
 
-        while (elapsedTime < duration)
+        while (elapsedTime < MovementTime)
         {
             // Give the platform a continous movement from initial to target position
-            transform.position = Vector2.Lerp(initial, targetPosition, elapsedTime / duration); 
+            transform.position = Vector2.Lerp(initial, targetPosition, elapsedTime / MovementTime); 
             elapsedTime += Time.deltaTime;
             yield return null; // Wait for the next frame
         }

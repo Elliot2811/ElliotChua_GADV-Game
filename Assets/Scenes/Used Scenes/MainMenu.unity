@@ -509,7 +509,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1136536737}
+      - m_Target: {fileID: 8811217801240493723, guid: 30648d9b9bae01b459c18afe4c01b814, type: 3}
         m_TargetAssemblyTypeName: GameStateHandler, Assembly-CSharp
         m_MethodName: LoadLevelSelectScreen
         m_Mode: 1
@@ -559,17 +559,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086518266}
   m_CullTransparentMesh: 1
---- !u!114 &1136536737 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8811217801240493723, guid: 30648d9b9bae01b459c18afe4c01b814, type: 3}
-  m_PrefabInstance: {fileID: 897197363}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ae6440b5dbb7d46bbbf612d8c3b3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1955488461
 GameObject:
   m_ObjectHideFlags: 0

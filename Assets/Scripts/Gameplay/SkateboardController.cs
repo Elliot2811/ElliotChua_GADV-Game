@@ -56,7 +56,7 @@ public class SkateboardController : MonoBehaviour
             if (collision.CompareTag("Spike"))
             {
                 Debug.Log("Player hit a spike (skateboard)");
-                GameStateHandler.Instance.Lose();
+                GameStateHandler.Instance.Lose("TriggerSpike");
             }
         }
 
