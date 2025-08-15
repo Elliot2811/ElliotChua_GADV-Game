@@ -14,13 +14,15 @@ public class RetryLevelButton : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void OnEnable()
     {
         if (GameStateHandler.Instance != null)
         {
             m_retryLevelButton.onClick.AddListener(() =>
             {
-                GameStateHandler.Instance.LoadLevel(GameStateHandler.Instance.m_LevelNumber);
+                string levelSceneName = GameStateHandler.Instance.m_levelName;
+                //Debug.Log($"Current scene: {levelSceneName}");
+                GameStateHandler.Instance.LoadLevel(levelSceneName);
             });
         }
     }
